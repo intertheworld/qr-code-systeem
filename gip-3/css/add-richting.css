@@ -1,0 +1,248 @@
+body {
+    /* background-color: #f5f7fa; */
+    font-family: Arial, sans-serif;
+    background-image: url('../img/background2.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form_area {
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.sub_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5d6d7e;
+    margin-bottom: 10px;
+}
+
+.form_style {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffd1b3;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff7f0;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form_style:focus {
+    border-color: #ff8c66;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 140, 102, 0.3);
+    background-color: #fff;
+}
+
+input[type="file"].form_style {
+    padding: 10px;
+    background-color: #fff7f0;
+    border: 1px dashed #ffd1b3;
+    cursor: pointer;
+}
+
+.form_group table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.form_group th,
+.form_group td {
+    border: 1px solid #dfe6e9;
+    padding: 12px;
+    text-align: left;
+}
+
+.form_group th {
+    background-color: #ecf0f1;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.form_group td {
+    background-color: #fff;
+}
+
+.form_group tr:nth-child(even) td {
+    background-color: #f9fbfc;
+}
+
+.form_group tr:hover td {
+    background-color: #f1f5f9;
+}
+
+.form_group input[type="text"],
+.form_group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffd1b3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff7f0;
+}
+
+.form_group input[type="button"].rmv {
+    background-color: #e17055;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.form_group input[type="button"].rmv:hover {
+    background-color: #d35400;
+}
+
+.form_group #add_row {
+    background-color: #6ab04c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.form_group #add_row:hover {
+    background-color: #5c9b3f;
+}
+
+.form_group tfoot td {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.trumbowyg-box {
+    border: 1px solid #ffd1b3;
+    border-radius: 6px;
+    background-color: #fff7f0;
+    margin-bottom: 20px;
+}
+
+.trumbowyg-editor {
+    min-height: 150px;
+    padding: 12px;
+    background-color: #fff7f0;
+    font-size: 14px;
+}
+
+.trumbowyg-button-pane {
+    background-color: #ecf0f1;
+    border-bottom: 1px solid #ffd1b3;
+    border-radius: 6px 6px 0 0;
+}
+
+.trumbowyg-button-pane button {
+    border-radius: 4px;
+    margin: 3px;
+    padding: 6px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin: 30px auto 0;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.dropzone {
+    border: 2px dashed #ffd1b3;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #fff7f0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone .dz-message {
+    color: #5d6d7e;
+    font-size: 14px;
+}
+
+.form_group {
+    margin: 25px 0;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.col-6 {
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .form_area {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .form_group table {
+        max-width: 100%;
+    }
+
+    .col-6 {
+        padding: 0 5px;
+    }
+
+    .submit-btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .form_style {
+        padding: 10px;
+    }
+}
